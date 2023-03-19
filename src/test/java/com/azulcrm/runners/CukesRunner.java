@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {
                 //"pretty",
-                "json:target/cucumber.json",
+                "json:target/cucumber.json", //This is for JIRA Integration, Reports
                 "html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/azulcrm/step_definitions",
         dryRun = false,
-        tags = "",
+        tags = "@AZUL10-362",
         publish = false
 
 )
