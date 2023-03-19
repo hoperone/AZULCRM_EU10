@@ -30,4 +30,7 @@ public class LoginPage {
 
     @FindBy(xpath = "//div[@class='errortext']")
     public WebElement errorText;
+
+    @FindBy(xpath = "//div[.='Authorization']")
+    public WebElement verifiesUserIsOnLoginPage;
 }

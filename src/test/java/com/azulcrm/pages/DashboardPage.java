@@ -16,4 +16,9 @@ public class DashboardPage {
 
     @FindBy(xpath = "//span[@id='user-name']")
     public WebElement userName;
+
+    @FindBy(xpath = "//span[.='Log out']")
+    public WebElement logoutBtn;
+
+
 }
