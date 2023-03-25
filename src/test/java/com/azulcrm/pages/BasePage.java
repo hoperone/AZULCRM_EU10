@@ -8,4 +8,14 @@ public abstract class BasePage {
     BasePage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
+
+    //--Locators--
+
+
+
+    //--Methods--
+    public String getPageTitle(){
+        return Driver.getDriver().getTitle();
+    }
+
 }
